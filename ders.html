@@ -3,33 +3,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        button{
-            background-color: aqua;
-            color: rgb(0, 0, 0);
-        }
-        button:hover{
-            background-color: rgb(0, 0, 0);
-            color: aliceblue;
-        }
-        button:active{
-            background-color: rgb(0, 38, 255);
-            color: rgb(255, 0, 76);
-        }
-    </style>
 </head>
 <body>
-    <button>
-        tıkla bana
-    </button>
+    <div id="denemediv"></div>
     <script>
-        function deneme() {
-            tanimsiz = 5;
+        const denemedivi =document.getElementById("denemediv");
+        const x = 78;
+        const y = 10;
+        let kalan = Math.floor(x / y);
+
+        if(x % y){
+            kalan += 1;
         }
-        deneme();
-        console.log(tanimsiz);
-        for(let i = 1; i <= Infinity ; i++){
-            console.log(4);
+
+        for(let i = 1; i <= kalan; i++){
+            denemedivi.innerHTML += "<button>" + i + "</button>";
         }
     </script>
 </body>
