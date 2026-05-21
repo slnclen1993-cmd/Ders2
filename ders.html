@@ -10,11 +10,7 @@
         const denemedivi =document.getElementById("denemediv");
         const x = 78;
         const y = 10;
-        let kalan = Math.floor(x / y);
-
-        if(x % y){
-            kalan += 1;
-        }
+        let kalan = Math.ceil(x / y);
 
         for(let i = 1; i <= kalan; i++){
             denemedivi.innerHTML += "<button>" + i + "</button>";
