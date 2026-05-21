@@ -13,7 +13,10 @@
         let kalan = Math.ceil(x / y);
 
         for(let i = 1; i <= kalan; i++){
-            denemedivi.innerHTML += "<button>" + i + "</button>";
+            denemedivi.innerHTML += "<button onclick='oylesine(" + i + ")'>" + i + "</button>";
+        }
+        function oylesine(pageIndex){
+            alert(pageIndex);
         }
     </script>
 </body>
